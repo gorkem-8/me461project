@@ -37,8 +37,8 @@ class backspacex:
         loc, game_point = info[self.name]
         y,x = loc # get current y,x coordinates
         # a very simple randomizer
-        nx=X[0]
-        ny=Y[0]
+        nx=X[0]+1
+        ny=Y[0]+1
         nx2=X[0]
         if x==nx:
             return [[y,nx+1],[ny,nx]]
