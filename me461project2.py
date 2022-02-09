@@ -51,28 +51,28 @@ class backspacex:
         #hedef noktasini bul ve oraya git  
         hedef = max(puan1,puan2,puan3,puan4,puan5,puan6,puan7,puan8,puan9,puan10,puan11,puan12)
         if hedef == puan1: 
-            return[ [myinfo[0]] ,  [ myinfo[0][0]+50 , myinfo[0][1] ] ]
+            return[[ myinfo[0][0]+50 , myinfo[0][1] ] ]
         if hedef == puan2:
-            return[ [myinfo[0]] ,  [ myinfo[0][0] , myinfo[0][1]+50 ] ]
+            return[[ myinfo[0][0] , myinfo[0][1]+50 ] ]
         if hedef == puan3: 
-            return[ [myinfo[0]] ,  [ myinfo[0][0]-50 , myinfo[0][1] ] ]
+            return[[ myinfo[0][0]-50 , myinfo[0][1] ] ]
         if hedef == puan4:
-            return[ [myinfo[0]] ,  [ myinfo[0][0] , myinfo[0][1]-50 ] ]
+            return[[ myinfo[0][0] , myinfo[0][1]-50 ] ]
         if hedef == puan5: 
-            return[ [myinfo[0]] ,  [ myinfo[0][0]+50 , myinfo[0][1] ] , [ myinfo[0][0] , myinfo[0][1]+50 ]  ]
+            return[[ myinfo[0][0]+50 , myinfo[0][1] ] , [ myinfo[0][0] , myinfo[0][1]+50 ]  ]
         if hedef == puan6:
-            return[ [myinfo[0]] ,  [ myinfo[0][0]-50 , myinfo[0][1] ] , [ myinfo[0][0] , myinfo[0][1]-50 ] ]
+            return[[ myinfo[0][0]-50 , myinfo[0][1] ] , [ myinfo[0][0] , myinfo[0][1]-50 ] ]
         if hedef == puan7: 
-            return[ [myinfo[0]] ,  [ myinfo[0][0]+50 , myinfo[0][1] ] , [ myinfo[0][0] , myinfo[0][1]-50 ]  ]
+            return[[ myinfo[0][0]+50 , myinfo[0][1] ] , [ myinfo[0][0] , myinfo[0][1]-50 ]  ]
         if hedef == puan8:
-            return[ [myinfo[0]] ,  [ myinfo[0][0]-50 , myinfo[0][1] ] , [ myinfo[0][0]+50 , myinfo[0][1]+50 ]  ]
+            return[[ myinfo[0][0]-50 , myinfo[0][1] ] , [ myinfo[0][0]+50 , myinfo[0][1]+50 ]  ]
         if hedef == puan9:
-            return[ [myinfo[0]] ,  [ myinfo[0][0]+100 , myinfo[0][1] ] ]
+            return[[ myinfo[0][0]+100 , myinfo[0][1] ] ]
         if hedef == puan10:
-            return[ [myinfo[0]] ,  [ myinfo[0][0] , myinfo[0][1]+100 ] ]
+            return[[ myinfo[0][0] , myinfo[0][1]+100 ] ]
         if hedef == puan11:
-            return[ [myinfo[0]] ,  [ myinfo[0][0]-100 , myinfo[0][1] ] ]
+            return[[ myinfo[0][0]-100 , myinfo[0][1] ] ]
         if hedef == puan12:
-            return[ [myinfo[0]] ,  [ myinfo[0][0] , myinfo[0][1]-100 ] ]
+            return[[ myinfo[0][0] , myinfo[0][1]-100 ] ]
         else : 
-            return[ [myinfo[0]] , [ myinfo[0][0]+50 , myinfo[0][1] ] , [ myinfo[0][0] , myinfo[0][1]+50 ] ]
+            return[[ myinfo[0][0]+50 , myinfo[0][1] ] , [ myinfo[0][0] , myinfo[0][1]+50 ] ]
