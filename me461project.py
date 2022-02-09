@@ -32,16 +32,16 @@ class backspacex:
     def run(self, img, info):
         myinfo = info[self.name]
         Y,X = np.where(np.all(img==[225,1,1],axis=2))
-        Y,X=[round((Y[0]+Y[-1])/2),round((X[0]+X[-1])/2)]
+        
         # get current location 
         loc, game_point = info[self.name]
         y,x = loc # get current y,x coordinates
         # a very simple randomizer
-        nx=X
-        ny=Y
-        nx2=X
+        nx=X[0]
+        ny=Y[0]
+        nx2=X[0]
         if x=nx:
-            return [[y,x],[ny,x]]
+            return [[ny,x],[ny,nx]]
         else:
-            return [[y,x],[y,nx]]
+            return [[y,nx],[ny,nx]]
 
