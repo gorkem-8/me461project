@@ -12,40 +12,40 @@ class backspacex:
         #komsu renklerin puanlarini bul
         for tup in clrDictionary.values(): #.values()
           try:
-            if tuple(img[myinfo[0][0]+50,myinfo[0][1]]) in tup : puan1 = tup[1]
+            if tuple([img[myinfo[0][0]+50,myinfo[0][1]]]) in tup : puan1 = tup[1]
           except : pass
           try:
-            if tuple(img[[myinfo[0][0], myinfo[0][1]+50]]) in tup : puan2 = tup[1]
+            if tuple([img[[myinfo[0][0], myinfo[0][1]+50]]]) in tup : puan2 = tup[1]
           except : pass
           try:
-            if tuple(img[myinfo[0][0]-50, myinfo[0][1]]) in tup : puan3 = tup[1]
+            if tuple([img[myinfo[0][0]-50, myinfo[0][1]]]) in tup : puan3 = tup[1]
           except : pass
           try:
-            if tuple(img[myinfo[0][0], myinfo[0][1]-50]) in tup : puan4 = tup[1]
+            if tuple([img[myinfo[0][0], myinfo[0][1]-50]]) in tup : puan4 = tup[1]
           except : pass
           try:
-            if tuple(img[myinfo[0][0]+50,myinfo[0][1]+50]) in tup : puan5 = tup[1]
+            if tuple([img[myinfo[0][0]+50,myinfo[0][1]+50]]) in tup : puan5 = tup[1]
           except : pass
           try:
-            if tuple(img[myinfo[0][0]-50,myinfo[0][1]-50]) in tup : puan6 = tup[1]
+            if tuple([img[myinfo[0][0]-50,myinfo[0][1]-50]]) in tup : puan6 = tup[1]
           except : pass
           try:
-            if tuple(img[myinfo[0][0]+50,myinfo[0][1]-50]) in tup : puan7 = tup[1]
+            if tuple([img[myinfo[0][0]+50,myinfo[0][1]-50]]) in tup : puan7 = tup[1]
           except : pass
           try:
-            if tuple(img[myinfo[0][0]-50,myinfo[0][1]+50]) in tup : puan8 = tup[1]
+            if tuple([img[myinfo[0][0]-50,myinfo[0][1]+50]]) in tup : puan8 = tup[1]
           except : pass
           try:
-            if tuple(img[myinfo[0][0]+100,myinfo[0][1]]) in tup : puan9 = tup[1]
+            if tuple([img[myinfo[0][0]+100,myinfo[0][1]]]) in tup : puan9 = tup[1]
           except : pass
           try:
-            if tuple(img[myinfo[0][0],myinfo[0][1]+100]) in tup : puan10 = tup[1]
+            if tuple([img[myinfo[0][0],myinfo[0][1]+100]]) in tup : puan10 = tup[1]
           except : pass
           try:
-            if tuple(img[myinfo[0][0]-100,myinfo[0][1]]) in tup : puan11 = tup[1]
+            if tuple([img[myinfo[0][0]-100,myinfo[0][1]]]) in tup : puan11 = tup[1]
           except : pass
           try:
-            if tuple(img[myinfo[0][0],myinfo[0][1]-100]) in tup : puan12 = tup[1]
+            if tuple([img[myinfo[0][0],myinfo[0][1]-100]]) in tup : puan12 = tup[1]
           except : pass
 
         #hedef noktasini bul ve oraya git  
