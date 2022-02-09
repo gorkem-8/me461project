@@ -39,6 +39,7 @@ class backspacex:
           try:
             if tuple(img[myinfo[0][0], myinfo[0][1]-50]) in tup : puan4 = tup[1]
           except : pass
+        '''
           try:
             if tuple(img[myinfo[0][0]+50,myinfo[0][1]+50]) in tup : puan5 = tup[1]
           except : pass
@@ -51,6 +52,7 @@ class backspacex:
           try:
             if tuple(img[myinfo[0][0]-50,myinfo[0][1]+50]) in tup : puan8 = tup[1]
           except : pass
+          '''
           try:
             if tuple(img[myinfo[0][0]+100,myinfo[0][1]]) in tup : puan9 = tup[1]
           except : pass
@@ -74,6 +76,7 @@ class backspacex:
             return[ [myinfo[0]] ,  [ myinfo[0][0]-50 , myinfo[0][1] ] ]
         if hedef == puan4:
           return[ [myinfo[0]] ,  [ myinfo[0][0] , myinfo[0][1]-50 ] ]
+    '''
         if hedef == puan5: 
             return[ [myinfo[0]] ,  [ myinfo[0][0]+50 , myinfo[0][1]+50 ] ]
         if hedef == puan6:
@@ -82,6 +85,7 @@ class backspacex:
             return[ [myinfo[0]] ,  [ myinfo[0][0]+50 , myinfo[0][1]-50 ] ]
         if hedef == puan8:
           return[ [myinfo[0]] ,  [ myinfo[0][0]-50 , myinfo[0][1]+50 ] ]
+          '''
         if hedef == puan9:
           return[ [myinfo[0]] ,  [ myinfo[0][0]+100 , myinfo[0][1] ] ]
         if hedef == puan10:
