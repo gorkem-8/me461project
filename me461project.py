@@ -41,7 +41,7 @@ class backspacex:
         ny=Y[0]
         nx2=X[0]
         if x=nx:
-            return [[ny,x],[ny,nx]]
+            return [[500,x],[ny,nx]]
         else:
             return [[y,nx],[ny,nx]]
 
