@@ -7,7 +7,7 @@ Greedy code
 
 import numpy as np
 import time
-class backspacexgreedy:
+class backspacex:
     '''
     This is the random player used in the colab example.
     Edit this file properly to turn it into your submission or generate a similar file that has the same minimal class structure.
