@@ -31,7 +31,7 @@ class backspacexgreedy:
   
     def run(self, img, info):
         myinfo = info[self.name]
-        Y,X = np.where(np.all(img==[255,1,1],axis=2))
+        Y,X = np.where(np.all(img==[225,1,1],axis=2))
         Y,X=[round((Y[0]+Y[-1])/2),round((X[0]+X[-1])/2)]
         # get current location 
         loc, game_point = info[self.name]
