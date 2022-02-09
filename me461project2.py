@@ -16,7 +16,7 @@ class backspacex:
         tulumba
     After you edit this class, save it as groupname.py where groupname again is exactly one of the above
     '''
-    def _init_(self, userName, clrDictionary, maxStepSize, maxTime):
+    def __init__(self, userName, clrDictionary, maxStepSize, maxTime):
         self.name = userName # your object will be given a user name, i.e. your group name
         self.maxStep = maxStepSize # maximum length of the returned path from run()
         self.maxTime = maxTime # run() is supposed to return before maxTime
