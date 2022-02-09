@@ -40,8 +40,8 @@ class backspacex:
         nx=X[0]
         ny=Y[0]
         nx2=X[0]
-        if x=nx:
-            return [[500,x],[ny,nx]]
+        if x==nx:
+            return [[y,nx+1],[ny,nx]]
         else:
             return [[y,nx],[ny,nx]]
 
