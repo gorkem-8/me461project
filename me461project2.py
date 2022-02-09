@@ -10,7 +10,7 @@ class backspacex:
         myinfo = info[self.name]
 
         #komsu renklerin puanlarini bul
-        for tup in clrDictionary : #.values()
+        for tup in clrDictionary.values(): #.values()
           try:
             if tuple(img[myinfo[0][0]+50,myinfo[0][1]]) in tup : puan1 = tup[1]
           except : pass
