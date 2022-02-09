@@ -39,6 +39,9 @@ class backspacex:
         # a very simple randomizer
         nx=X
         ny=Y
-        nx2=X        
-        return [[y,nx],[ny,nx]]
+        nx2=X
+        if x=nx:
+            return [ny,nx]
+        else:
+            return [[y,nx],[ny,nx]]
 
