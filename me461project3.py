@@ -188,13 +188,16 @@ class backspacex:
                   goal=[[y,x-1],[y-50,x-1]]
                
          elif i==3:
+            if x+50>740:
+               continue
+            else:
             
-            if any(img[y-50,x+50]==[255,255,255]):
-               pass
-            
-            elif any(img[y-50,x+50]==[225,1,1]):
-               goal=[[y,x+50],[y-50,x+50]]
-               break
+               if any(img[y-50,x+50]==[255,255,255]):
+                  pass
+
+               elif any(img[y-50,x+50]==[225,1,1]):
+                  goal=[[y,x+50],[y-50,x+50]]
+                  break
                
             elif any(img[y-50,x+50]==[1,255,1]):
                colorpoint=50
@@ -273,7 +276,84 @@ class backspacex:
                if colorpoint>a:
                   a=colorpoint
                   goal=[[y,x+50],[y-50,x+50]]
-            
+               elif any(img[y-50,x+50]==[1,255,1]):
+                  colorpoint=50
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y-50,x+50]]
+
+               elif any(img[y-50,x+50]==[1,1,255]):
+                  colorpoint=30
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y-50,x+50]]
+
+               elif any(img[y-50,x+50]==[200,200,1]):
+                  colorpoint=20
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y-50,x+50]]
+
+               elif any(img[y-50,x+50]==[255,1,255]):
+                  colorpoint=10
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y-50,x+50]]
+
+               elif any(img[y-50,x+50]==[1,255,255]):
+                  colorpoint=9
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y-50,x+50]]
+
+               elif any(img[y-50,x+50]==[1,1,150]):
+                  colorpoint=8
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y-50,x+50]]
+
+               elif any(img[y-50,x+50]==[120,120,40]):
+                  colorpoint=7
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y-50,x+50]]
+
+               elif any(img[y-50,x+50]==[150,1,150]):
+                  colorpoint=6
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y-50,x+50]]
+
+               elif any(img[y-50,x+50]==[1,150,150]):
+                  colorpoint=5
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y-50,x+50]]
+
+               elif any(img[y-50,x+50]==[222,55,222]):
+                  colorpoint=4
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y-50,x+50]]
+
+               elif any(img[y-50,x+50]==[1,99,55]):
+                  colorpoint=3
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y-50,x+50]]
+
+               elif any(img[y-50,x+50]==[200,100,10]):
+                  colorpoint=2
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y-50,x+50]]
+
+               elif any(img[y-50,x+50]==[100,10,200]):
+                  colorpoint=1
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y-50,x+50]]
+
          elif i==4:
             if x+50>740:
                continue
@@ -364,91 +444,94 @@ class backspacex:
                      goal=[[y,x+50],[y+1,x+50]]
                
          elif i==5:
+            if x+50>740:
+               continue
+            else:
             
-            if any(img[y+50,x+50]==[255,255,255]):
-               pass
-            
-            elif any(img[y-50,x-50]==[225,1,1]):
-               goal=[[y,x+50],[y+50,x+50]]
-               break
-               
-            elif any(img[y+50,x+50]==[1,255,1]):
-               colorpoint=50
-               if colorpoint>a:
-                  a=colorpoint
+               if any(img[y+50,x+50]==[255,255,255]):
+                  pass
+
+               elif any(img[y-50,x-50]==[225,1,1]):
                   goal=[[y,x+50],[y+50,x+50]]
-            
-            elif any(img[y+50,x+50]==[1,1,255]):
-               colorpoint=30
-               if colorpoint>a:
-                  a=colorpoint
-                  goal=[[y,x+50],[y+50,x+50]]
-              
-            elif any(img[y+50,x+50]==[200,200,1]):
-               colorpoint=20
-               if colorpoint>a:
-                  a=colorpoint
-                  goal=[[y,x+50],[y+50,x+50]]
-             
-            elif any(img[y+50,x+50]==[255,1,255]):
-               colorpoint=10
-               if colorpoint>a:
-                  a=colorpoint
-                  goal=[[y,x+50],[y+50,x+50]]
-            
-            elif any(img[y+50,x+50]==[1,255,255]):
-               colorpoint=9
-               if colorpoint>a:
-                  a=colorpoint
-                  goal=[[y,x+50],[y+50,x+50]]
-            
-            elif any(img[y+50,x+50]==[1,1,150]):
-               colorpoint=8
-               if colorpoint>a:
-                  a=colorpoint
-                  goal=[[y,x+50],[y+50,x+50]]
-                  
-            elif any(img[y+50,x+50]==[120,120,40]):
-               colorpoint=7
-               if colorpoint>a:
-                  a=colorpoint
-                  goal=[[y,x+50],[y+50,x+50]]
-            
-            elif any(img[y+50,x+50]==[150,1,150]):
-               colorpoint=6
-               if colorpoint>a:
-                  a=colorpoint
-                  goal=[[y,x+50],[y+50,x+50]]
-                  
-            elif any(img[y+50,x+50]==[1,150,150]):
-               colorpoint=5
-               if colorpoint>a:
-                  a=colorpoint
-                  goal=[[y,x+50],[y+50,x+50]]
-                  
-            elif any(img[y+50,x+50]==[222,55,222]):
-               colorpoint=4
-               if colorpoint>a:
-                  a=colorpoint
-                  goal=[[y,x+50],[y+50,x+50]]
-            
-            elif any(img[y+50,x+50]==[1,99,55]):
-               colorpoint=3
-               if colorpoint>a:
-                  a=colorpoint
-                  goal=[[y,x+50],[y+50,x+50]]
-            
-            elif any(img[y+50,x+50]==[200,100,10]):
-               colorpoint=2
-               if colorpoint>a:
-                  a=colorpoint
-                  goal=[[y,x+50],[y+50,x+50]]
-            
-            elif any(img[y+50,x+50]==[100,10,200]):
-               colorpoint=1
-               if colorpoint>a:
-                  a=colorpoint
-                  goal=[[y,x+50],[y+50,x+50]]        
+                  break
+
+               elif any(img[y+50,x+50]==[1,255,1]):
+                  colorpoint=50
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y+50,x+50]]
+
+               elif any(img[y+50,x+50]==[1,1,255]):
+                  colorpoint=30
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y+50,x+50]]
+
+               elif any(img[y+50,x+50]==[200,200,1]):
+                  colorpoint=20
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y+50,x+50]]
+
+               elif any(img[y+50,x+50]==[255,1,255]):
+                  colorpoint=10
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y+50,x+50]]
+
+               elif any(img[y+50,x+50]==[1,255,255]):
+                  colorpoint=9
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y+50,x+50]]
+
+               elif any(img[y+50,x+50]==[1,1,150]):
+                  colorpoint=8
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y+50,x+50]]
+
+               elif any(img[y+50,x+50]==[120,120,40]):
+                  colorpoint=7
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y+50,x+50]]
+
+               elif any(img[y+50,x+50]==[150,1,150]):
+                  colorpoint=6
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y+50,x+50]]
+
+               elif any(img[y+50,x+50]==[1,150,150]):
+                  colorpoint=5
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y+50,x+50]]
+
+               elif any(img[y+50,x+50]==[222,55,222]):
+                  colorpoint=4
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y+50,x+50]]
+
+               elif any(img[y+50,x+50]==[1,99,55]):
+                  colorpoint=3
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y+50,x+50]]
+
+               elif any(img[y+50,x+50]==[200,100,10]):
+                  colorpoint=2
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y+50,x+50]]
+
+               elif any(img[y+50,x+50]==[100,10,200]):
+                  colorpoint=1
+                  if colorpoint>a:
+                     a=colorpoint
+                     goal=[[y,x+50],[y+50,x+50]]        
             
          elif i==6:
             
