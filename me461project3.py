@@ -16,7 +16,7 @@ class backspacex:
       for i in range(1,13):
          if i==1:
             if any(img[y-50,x-50]==[255,255,255]):
-               pass
+               colorpoint=0
             
             elif any(img[y-50,x-50]==[225,1,1]):
                goal=[[y,x-50],[y-50,x-50]]
@@ -103,7 +103,7 @@ class backspacex:
          elif i==2:
      
             if any(img[y-50,x-1]==[255,255,255]):
-               pass
+               colorpoint=0
             
             elif any(img[y-50,x-1]==[225,1,1]):
                goal=[[y,x-1],[y-50,x-1]]
@@ -189,7 +189,8 @@ class backspacex:
                
          elif i==3:
             if any(img[y-50,x+50]==[255,255,255]):
-               pass
+               colorpoint=0
+               
             elif any(img[y-50,x+50]==[225,1,1]):
                goal=[[y,x+50],[y-50,x+50]]
                break
@@ -276,9 +277,8 @@ class backspacex:
                
               
          elif i==4:
-            
                if any(img[y,x+50]==[255,255,255]):
-                  pass
+                  colorpoint=0
             
                elif any(img[y,x+50]==[225,1,1]):
                   goal=[[y,x+50],[y+1,x+50]]
@@ -365,7 +365,7 @@ class backspacex:
          elif i==5:
           
                if any(img[y+50,x+50]==[255,255,255]):
-                  pass
+                  colorpoint=0
 
                elif any(img[y+50,x+50]==[225,1,1]):
                   goal=[[y,x+50],[y+50,x+50]]
@@ -452,7 +452,7 @@ class backspacex:
          elif i==6:
             
             if any(img[y+50,x]==[255,255,255]):
-               pass
+               colorpoint=0
             
             elif any(img[y+50,x]==[225,1,1]):
                goal=[[y,x-1],[y+50,x-1]]
@@ -539,7 +539,7 @@ class backspacex:
          elif i==7:
             
             if any(img[y+50,x-50]==[255,255,255]):
-               pass
+               colorpoint=0
             
             elif any(img[y+50,x-50]==[225,1,1]):
                goal=[[y,x-50],[y+50,x-50]]
@@ -626,7 +626,7 @@ class backspacex:
          elif i==8:
             
             if any(img[y,x-50]==[255,255,255]):
-               pass
+               colorpoint=0
             
             elif any(img[y,x-50]==[225,1,1]):
                goal=[[y,x-50],[y+1,x-50]]
@@ -712,7 +712,7 @@ class backspacex:
          
          elif i==9:
             if any(img[y-100,x]==[255,255,255]):
-               pass
+               colorpoint=0
             
             elif any(img[y-100,x]==[225,1,1]):
                goal=[[y,x-1],[y-100,x-1]]
@@ -798,7 +798,7 @@ class backspacex:
             
          elif i==10:
             if any(img[y,x+100]==[255,255,255]):
-               pass
+               colorpoint=0
             
             elif any(img[y,x+100]==[225,1,1]):
                goal=[[y,x+100],[y+1,x+100]]
@@ -884,7 +884,7 @@ class backspacex:
             
          elif i==11:
             if any(img[y+100,x]==[255,255,255]):
-               pass
+               colorpoint=0
             
             elif any(img[y+100,x]==[225,1,1]):
                goal=[[y,x-1],[y+100,x-1]]
@@ -970,7 +970,7 @@ class backspacex:
             
          elif i==12:
             if any(img[y,x-100]==[255,255,255]):
-               pass
+               colorpoint=0
             
             elif any(img[y,x-100]==[225,1,1]):
                goal=[[y,x-100],[y-1,x-100]]
