@@ -191,7 +191,7 @@ class backspacex:
             if x+50>740:
                continue
             else:
-            
+               
                if any(img[y-50,x+50]==[255,255,255]):
                   pass
 
