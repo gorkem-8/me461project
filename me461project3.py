@@ -14,22 +14,23 @@ class backspacex:
       
       for i in range(1,9):
          if i==1:
-            goal=[[y,x-50],[y-50,x-50]]
+            pass
+            #goal=[[y,x-50],[y-50,x-50]]
          elif i==2:
             if any(img[y-50,x-1]==[225,1,1]):
                goal=[[y,x-1],[y-50,x-1]]
-         elif i==3:
-            goal=[[y,x+50],[y-50,x+50]]
+         #elif i==3:
+            #goal=[[y,x+50],[y-50,x+50]]
          elif i==4:
             if any(img[y,x+50]==[225,1,1]):
                goal=[[y,x+50],[y+1,x+50]]
-         elif i==5:
-            goal=[[y,x+50],[y+50,x+50]]
+         #elif i==5:
+            #goal=[[y,x+50],[y+50,x+50]]
          elif i==6:
             if any(img[y+50,x-1]==[225,1,1]):
                goal=[[y,x-1],[y+50,x-1]]
-         elif i==7:
-            goal=[[y,x-50],[y+50,x-50]]
+         #elif i==7:
+            #goal=[[y,x-50],[y+50,x-50]]
          elif i==8:
             if any(img[y,x-50]==[225,1,1]):
                goal=[[y,x-50],[y+1,x-50]]   
