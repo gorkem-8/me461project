@@ -15,7 +15,6 @@ class backspacex:
         goal=[[0,0],[0,0]]
         for i in range(1,9):
             if i==1:
-                goal==[[y,x-50],[y+50,x-50]]
+                goal2==[[y,x-50],[y+50,x-50]]
 
-        
-        return goal
+        return goal2
