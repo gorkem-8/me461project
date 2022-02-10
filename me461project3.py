@@ -14,19 +14,19 @@ class backspacex:
       #goal=[[0,0],[0,0]]
       for i in range(1,9):
          if i==1:
-            goal=[[y,x-50],[y+50,x-50]]
+            goal=[[y,x-50],[y-50,x-50]]
          elif i==2:
-            goal=[[y,x-50],[y+50,x-50]]
+            goal=[[y,x-1],[y-50,x-1]]
          elif i==3:
-            goal=[[y,x-50],[y+50,x-50]]
+            goal=[[y,x+50],[y-50,x+50]]
          elif i==4:
-            goal=[[y,x-50],[y+50,x-50]]
+            goal=[[y,x+50],[y+1,x+50]]
          elif i==5:
-            goal=[[y,x-50],[y+50,x-50]]
+            goal=[[y,x+50],[y+50,x+50]]
          elif i==6:
-            goal=[[y,x-50],[y+50,x-50]]
+            goal=[[y,x-1],[y+50,x-1]]
          elif i==7:
             goal=[[y,x-50],[y+50,x-50]]
          elif i==8:
-            goal=[[y,x-50],[y+50,x-50]]   
+            goal=[[y,x-50],[y+1,x-50]]   
       return goal
