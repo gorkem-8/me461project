@@ -17,4 +17,4 @@ class backspacex:
             if i==1:
                   goal==[[y,x-50],[y+50,x-50]]
 
-        return goal
+        return [[575,675],[625,675]]
