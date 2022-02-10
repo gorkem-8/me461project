@@ -12,8 +12,7 @@ class backspacex:
       loc, game_point = info[self.name]
       y,x = loc # get current y,x coordinates
       goal=[[0,0],[0,0]]
-      goal==[[y,x-50],[y+50,x-50]]
       for i in range(1,9):
          if i==1:
             goal==[[y,x-50],[y+50,x-50]]
-      return [[575,675],[625,675]]
+      return goal
