@@ -114,6 +114,7 @@ class backspacex:
                colorpoint=0
             
             elif all(img[y-rang,x-1]==[225,1,1]):
+               colorpoint=100
                goal=[[y,x-1],[y-rang,x-1]]
                break
                
@@ -202,6 +203,7 @@ class backspacex:
                colorpoint=0
                
             elif all(img[y-rang,x+rang]==[225,1,1]):
+               colorpoint=100
                goal=[[y,x+rang],[y-rang,x+rang]]
                break
                
@@ -293,6 +295,7 @@ class backspacex:
                   colorpoint=0
             
                elif all(img[y,x+rang]==[225,1,1]):
+                  colorpoint=100
                   goal=[[y,x+rang],[y+1,x+rang]]
                   break
 
@@ -381,6 +384,7 @@ class backspacex:
                   colorpoint=0
 
                elif all(img[y+rang,x+rang]==[225,1,1]):
+                  colorpoint=100
                   goal=[[y,x+rang],[y+rang,x+rang]]
                   break
 
@@ -469,6 +473,7 @@ class backspacex:
                colorpoint=0
             
             elif all(img[y+rang,x]==[225,1,1]):
+               colorpoint=100
                goal=[[y,x-1],[y+rang,x-1]]
                break
                
@@ -557,6 +562,7 @@ class backspacex:
                colorpoint=0
             
             elif all(img[y+rang,x-rang]==[225,1,1]):
+               colorpoint=100
                goal=[[y,x-rang],[y+rang,x-rang]]
                break
                
@@ -645,6 +651,7 @@ class backspacex:
                colorpoint=0
             
             elif all(img[y,x-rang]==[225,1,1]):
+               colorpoint=100
                goal=[[y,x-rang],[y+1,x-rang]]
                break
                
@@ -733,6 +740,7 @@ class backspacex:
                colorpoint=0
             
             elif all(img[y-rang*2,x]==[225,1,1]):
+               colorpoint=100
                goal=[[y,x-1],[y-rang*2,x-1]]
                break
                
@@ -821,6 +829,7 @@ class backspacex:
                colorpoint=0
             
             elif all(img[y,x+rang*2]==[225,1,1]):
+               colorpoint=100
                goal=[[y,x+rang*2],[y+1,x+rang*2]]
                break
                
@@ -909,6 +918,7 @@ class backspacex:
                colorpoint=0
             
             elif all(img[y+rang*2,x]==[225,1,1]):
+               colorpoint=100
                goal=[[y,x-1],[y+rang*2,x-1]]
                break
                
@@ -997,6 +1007,7 @@ class backspacex:
                colorpoint=0
             
             elif all(img[y,x-rang*2]==[225,1,1]):
+               colorpoint=100
                goal=[[y,x-rang*2],[y-1,x-rang*2]]
                break
                
