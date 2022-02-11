@@ -1105,6 +1105,11 @@ class backspacex:
             i=0
             rang=rang+100           
       
-      if game_point-a<0:
+         elif game_point-a<0:
+            i=0
+            rang=rang+100
+         else:
+            
+         
       
       return goal
