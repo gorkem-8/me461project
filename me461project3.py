@@ -19,6 +19,7 @@ class backspacex:
                colorpoint=0
             
             elif any(img[y-50,x-50]==[225,1,1]):
+               colorpoint=100
                goal=[[y,x-50],[y-50,x-50]]
                break
                
