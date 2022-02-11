@@ -15,6 +15,9 @@ class backspacex:
       colorpoint=0
       rang=50
       for i in range(1,13):
+      i=0
+      while i<12:
+         i=i+1
          
          if i==1:
             if y-rang<0 or x-rang<0:
@@ -1077,8 +1080,6 @@ class backspacex:
                   goal=[[y,x-rang*2],[y-1,x-rang*2]]
          if a==0 and i==12:
             i=0
-            rang=rang*2
-            continue
-            
+            rang=rang*2            
          
       return goal
