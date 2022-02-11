@@ -1070,6 +1070,8 @@ class backspacex:
                if colorpoint>a:
                   a=colorpoint
                   goal=[[y,x-100],[y-1,x-100]]
+         if a==0:
+            goal=[[y,0],[0,0]]
             
          
       return goal
