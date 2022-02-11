@@ -1078,6 +1078,7 @@ class backspacex:
          if a==0 and i==12:
             i=0
             rang=rang*2
+            continue
             
          
       return goal
