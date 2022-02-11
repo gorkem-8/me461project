@@ -735,93 +735,93 @@ class backspacex:
                   goal=[[y,x-rang],[y+1,x-rang]]
          
          elif i==9:
-            if y-rang+50<0:
+            if y-rang-50<0:
                continue
-            if all(img[y-rang+50,x]==[255,255,255]):
+            if all(img[y-rang-50,x]==[255,255,255]):
                colorpoint=0
             
-            elif all(img[y-rang+50,x]==[225,1,1]):
+            elif all(img[y-rang-50,x]==[225,1,1]):
                colorpoint=100
-               goal=[[y,x-1],[y-rang+50,x-1]]
+               goal=[[y,x-1],[y-rang-50,x-1]]
                break
                
-            elif all(img[y-rang+50,x]==[1,255,1]):
+            elif all(img[y-rang-50,x]==[1,255,1]):
                colorpoint=50
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-1],[y-rang+50,x-1]]
+                  goal=[[y,x-1],[y-rang-50,x-1]]
             
-            elif all(img[y-rang+50,x]==[1,1,255]):
+            elif all(img[y-rang-50,x]==[1,1,255]):
                colorpoint=30
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-1],[y-rang+50,x-1]]
+                  goal=[[y,x-1],[y-rang-50,x-1]]
               
-            elif all(img[y-rang+50,x]==[200,200,1]):
+            elif all(img[y-rang-50,x]==[200,200,1]):
                colorpoint=20
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-1],[y-rang+50,x-1]]
+                  goal=[[y,x-1],[y-rang-50,x-1]]
              
-            elif all(img[y-rang+50,x]==[255,1,255]):
+            elif all(img[y-rang-50,x]==[255,1,255]):
                colorpoint=10
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-1],[y-rang+50,x-1]]
+                  goal=[[y,x-1],[y-rang-50,x-1]]
             
-            elif all(img[y-rang+50,x]==[1,255,255]):
+            elif all(img[y-rang-50,x]==[1,255,255]):
                colorpoint=9
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-1],[y-rang+50,x-1]]
+                  goal=[[y,x-1],[y-rang-50,x-1]]
             
-            elif all(img[y-rang+50,x]==[1,1,150]):
+            elif all(img[y-rang-50,x]==[1,1,150]):
                colorpoint=8
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-1],[y-rang+50,x-1]]
+                  goal=[[y,x-1],[y-rang-50,x-1]]
                   
-            elif all(img[y-rang+50,x]==[120,120,40]):
+            elif all(img[y-rang-50,x]==[120,120,40]):
                colorpoint=7
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-1],[y-rang+50,x-1]]
+                  goal=[[y,x-1],[y-rang-50,x-1]]
             
-            elif all(img[y-rang+50,x]==[150,1,150]):
+            elif all(img[y-rang-50,x]==[150,1,150]):
                colorpoint=6
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-1],[y-rang+50,x-1]]
+                  goal=[[y,x-1],[y-rang-50,x-1]]
                   
-            elif all(img[y-rang+50,x]==[1,150,150]):
+            elif all(img[y-rang-50,x]==[1,150,150]):
                colorpoint=5
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-1],[y-rang+50,x-1]]
+                  goal=[[y,x-1],[y-rang-50,x-1]]
                   
-            elif all(img[y-rang+50,x]==[222,55,222]):
+            elif all(img[y-rang-50,x]==[222,55,222]):
                colorpoint=4
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-1],[y-rang+50,x-1]]
+                  goal=[[y,x-1],[y-rang-50,x-1]]
             
-            elif all(img[y-rang+50,x]==[1,99,55]):
+            elif all(img[y-rang-50,x]==[1,99,55]):
                colorpoint=3
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-1],[y-rang+50,x-1]]
+                  goal=[[y,x-1],[y-rang-50,x-1]]
             
-            elif all(img[y-rang+50,x]==[200,100,10]):
+            elif all(img[y-rang-50,x]==[200,100,10]):
                colorpoint=2
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-1],[y-rang+50,x-1]]
+                  goal=[[y,x-1],[y-rang-50,x-1]]
             
-            elif all(img[y-rang+50,x]==[100,10,200]):
+            elif all(img[y-rang-50,x]==[100,10,200]):
                colorpoint=1
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-1],[y-rang+50,x-1]]
+                  goal=[[y,x-1],[y-rang-50,x-1]]
             
          elif i==10:
             if x+rang+50>750:
@@ -1002,93 +1002,93 @@ class backspacex:
                   goal=[[y,x-1],[y+rang+50,x-1]]
             
          elif i==12:
-            if x-rang+50<0:
+            if x-rang-50<0:
                continue
-            if all(img[y,x-rang+50]==[255,255,255]):
+            if all(img[y,x-rang-50]==[255,255,255]):
                colorpoint=0
             
-            elif all(img[y,x-rang+50]==[225,1,1]):
+            elif all(img[y,x-rang-50]==[225,1,1]):
                colorpoint=100
-               goal=[[y,x-rang+50],[y-1,x-rang+50]]
+               goal=[[y,x-rang-50],[y-1,x-rang-50]]
                break
                
-            elif all(img[y,x-rang+50]==[1,255,1]):
+            elif all(img[y,x-rang-50]==[1,255,1]):
                colorpoint=50
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-rang+50],[y-1,x-rang+50]]
+                  goal=[[y,x-rang-50],[y-1,x-rang-50]]
             
-            elif all(img[y,x-rang+50]==[1,1,255]):
+            elif all(img[y,x-rang-50]==[1,1,255]):
                colorpoint=30
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-rang+50],[y-1,x-rang+50]]
+                  goal=[[y,x-rang-50],[y-1,x-rang-50]]
               
-            elif all(img[y,x-rang+50]==[200,200,1]):
+            elif all(img[y,x-rang-50]==[200,200,1]):
                colorpoint=20
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-rang+50],[y-1,x-rang+50]]
+                  goal=[[y,x-rang-50],[y-1,x-rang-50]]
              
-            elif all(img[y,x-rang+50]==[255,1,255]):
+            elif all(img[y,x-rang-50]==[255,1,255]):
                colorpoint=10
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-rang+50],[y-1,x-rang+50]]
+                  goal=[[y,x-rang-50],[y-1,x-rang-50]]
             
-            elif all(img[y,x-rang+50]==[1,255,255]):
+            elif all(img[y,x-rang-50]==[1,255,255]):
                colorpoint=9
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-rang+50],[y-1,x-rang+50]]
+                  goal=[[y,x-rang-50],[y-1,x-rang-50]]
             
-            elif all(img[y,x-rang+50]==[1,1,150]):
+            elif all(img[y,x-rang-50]==[1,1,150]):
                colorpoint=8
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-rang+50],[y-1,x-rang+50]]
+                  goal=[[y,x-rang-50],[y-1,x-rang-50]]
                   
-            elif all(img[y,x-rang+50]==[120,120,40]):
+            elif all(img[y,x-rang-50]==[120,120,40]):
                colorpoint=7
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-rang+50],[y-1,x-rang+50]]
+                  goal=[[y,x-rang-50],[y-1,x-rang-50]]
             
-            elif all(img[y,x-rang+50]==[150,1,150]):
+            elif all(img[y,x-rang-50]==[150,1,150]):
                colorpoint=6
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-rang+50],[y-1,x-rang+50]]
+                  goal=[[y,x-rang-50],[y-1,x-rang-50]]
                   
-            elif all(img[y,x-rang+50]==[1,150,150]):
+            elif all(img[y,x-rang-50]==[1,150,150]):
                colorpoint=5
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-rang+50],[y-1,x-rang+50]]
+                  goal=[[y,x-rang-50],[y-1,x-rang-50]]
                   
-            elif all(img[y,x-rang+50]==[222,55,222]):
+            elif all(img[y,x-rang-50]==[222,55,222]):
                colorpoint=4
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-rang+50],[y-1,x-rang+50]]
+                  goal=[[y,x-rang-50],[y-1,x-rang-50]]
             
-            elif all(img[y,x-rang+50]==[1,99,55]):
+            elif all(img[y,x-rang-50]==[1,99,55]):
                colorpoint=3
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-rang+50],[y-1,x-rang+50]]
+                  goal=[[y,x-rang-50],[y-1,x-rang-50]]
             
-            elif all(img[y,x-rang+50]==[200,100,10]):
+            elif all(img[y,x-rang-50]==[200,100,10]):
                colorpoint=2
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-rang+50],[y-1,x-rang+50]]
+                  goal=[[y,x-rang-50],[y-1,x-rang-50]]
             
-            elif all(img[y,x-rang+50]==[100,10,200]):
+            elif all(img[y,x-rang-50]==[100,10,200]):
                colorpoint=1
                if colorpoint>a:
                   a=colorpoint
-                  goal=[[y,x-rang+50],[y-1,x-rang+50]]
+                  goal=[[y,x-rang-50],[y-1,x-rang-50]]
          if a==0 and i==12:
             i=0
             rang=rang+100           
