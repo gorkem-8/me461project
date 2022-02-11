@@ -15,6 +15,7 @@ class backspacex:
       colorpoint=0
       rang=50
       i=0
+      goal=[[y,x+1],[y+1,x+1]]
       while i<12:
          i=i+1
          
