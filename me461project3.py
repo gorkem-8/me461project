@@ -14,7 +14,6 @@ class backspacex:
       a=0
       colorpoint=0
       rang=50
-      for i in range(1,13):
       i=0
       while i<12:
          i=i+1
