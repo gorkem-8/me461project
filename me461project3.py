@@ -194,7 +194,7 @@ class backspacex:
                   goal=[[y,x-1],[y-rang,x-1]]
                
          elif i==3:
-            if x+rang>750:
+            if x+rang>750 or y-rang<0:
                continue
             if all(img[y-rang,x+rang]==[255,255,255]):
                colorpoint=0
