@@ -1119,12 +1119,14 @@ class backspacex:
          for i in colorz:
             if game_point-colorz[i][1]<0 and all(img[y][X]==colorz[i][0]):
                goal[1][0]=goal[1][0]-50
+               goal=[[y,x+100],[y+1,x+100]]
                break
       while(abs(Y-goal[1][0])>0):
          Y+=y_sign
          for i in colorz:
             if game_point-colorz[i][1]<0 and all(img[Y][X]==colorz[i][0]):
                goal[1][1]=goal[1][1]-50
+               goal=[[y,x+100],[y+1,x+100]]
                break
          
       return goal
