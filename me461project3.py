@@ -16,7 +16,7 @@ class backspacex:
       rang=50
       i=0
       goal=[[y,x+1],[y+1,x+1]]
-      while i<12:
+      while i<13:
          i=i+1
          
          if i==1:
@@ -1102,14 +1102,13 @@ class backspacex:
                   a=colorpoint
                   goal=[[y,x-rang-50],[y-1,x-rang-50]]
            
-         if a==0 and i==12:
+         if a==0 and i==13:
             i=0
-            a=0
             rang=rang+50           
       
-         #elif game_point-a<0:
-            #i=0
-            #rang=rang+50
+         elif game_point-a<0:
+            i=0
+            rang=rang+50
       
          
       
