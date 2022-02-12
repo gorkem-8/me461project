@@ -1109,23 +1109,8 @@ class backspacex:
          elif game_point-a<0:
             i=0
             rang=rang+50
-       '''     
-      X=x
-      Y=y
-      x_sign=(goal[1][1]-x)/abs(goal[1][1]-x)
-      y_sign=(goal[1][0]-y)/abs(goal[1][0]-y)
-      while(abs(X-goal[1][1])>0):
-         X+=x_sign
-         for i in colorz:
-            if (game_point-colorz[i][1]<0) and (all(img[y][X]==colorz[i][0])):
-               goal[1][0]=goal[1][0]-50
-               break
-      while(abs(Y-goal[1][0])>0):
-         Y+=y_sign
-         for i in colorz:
-            if game_point-colorz[i][0]<0 and all(img[X][Y]==colorz[i][0]):
-               goal[1][1]=goal[1][1]-50
-               break
-         '''
+            
+      
+         
       
       return goal
