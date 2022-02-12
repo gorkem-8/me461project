@@ -1104,7 +1104,7 @@ class backspacex:
          if a==0 and i==12:
             i=0
             a=0
-            rang=rang+100           
+            rang=rang+50           
       
          #elif game_point-a<0:
             #i=0
