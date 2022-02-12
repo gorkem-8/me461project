@@ -1107,13 +1107,25 @@ class backspacex:
             rang=rang+50           
       
          if game_point-a<0:
-            if all(img[y+50,x]==[255,255,255]):
-               goal=[[y,x+1],[y+50,x+1]]
-            elif all(img[y+50,x]==[1,1,1]):
-               goal=[[y,x+1],[y+50,x+1]]
-            elif all(img[y+50,x]==[0,0,0]):
-               goal=[[y,x+1],[y+50,x+1]]
+            c=np.random.randint(2)
+            if c==0:
+               if all(img[y+50,x]==[255,255,255]):
+                  goal=[[y,x+1],[y+50,x+1]]
+               elif all(img[y+50,x]==[1,1,1]):
+                  goal=[[y,x+1],[y+50,x+1]]
+               elif all(img[y+50,x]==[0,0,0]):
+                  goal=[[y,x+1],[y+50,x+1]]
+               else:
+                  goal=[[y,x+50],[y+1,x+50]]
+               break
             else:
-               goal=[[y,x+50],[y+1,x+50]]
-            break
+               if all(img[y-50,x]==[255,255,255]):
+                  goal=[[y,x+1],[y-50,x+1]]
+               elif all(img[y-50,x]==[1,1,1]):
+                  goal=[[y,x+1],[y-50,x+1]]
+               elif all(img[y-50,x]==[0,0,0]):
+                  goal=[[y,x+1],[y-50,x+1]]
+               else:
+                  goal=[[y,x-50],[y+1,x-50]]
+               break
       return goal
