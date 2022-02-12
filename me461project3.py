@@ -1106,9 +1106,9 @@ class backspacex:
             i=0
             rang=rang+50           
       
-         elif game_point-a<0:
-            i=0
-            rang=rang+50
+         #elif game_point-a<0:
+            #i=0
+            #rang=rang+50
       
          
       
