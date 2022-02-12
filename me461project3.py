@@ -1115,5 +1115,5 @@ class backspacex:
                goal=[[y,x+1],[y+50,x+1]]
             else:
                goal=[[y,x+50],[y+1,x+50]]
-         
+            break
       return goal
