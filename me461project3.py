@@ -1106,7 +1106,7 @@ class backspacex:
             i=0
             rang=rang+50           
       
-         elif game_point-a<0:
+         if game_point-a<0:
             if all(img[y+50,x]==[255,255,255]):
                goal=[[y,x+1],[y+50,x+1]]
             elif all(img[y+50,x]==[1,1,1]):
