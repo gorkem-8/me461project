@@ -1117,7 +1117,7 @@ class backspacex:
                goal=[[y,x+1],[y+50,x+1]]
             else:
                goal=[[y,x+50],[y+1,x+50]]
-            break
+            
          elif c==1:
             if all(img[y-50,x]==[255,255,255]):
                goal=[[y,x+1],[y-50,x+1]]
@@ -1127,7 +1127,7 @@ class backspacex:
                goal=[[y,x+1],[y-50,x+1]]
             else:
                goal=[[y,x-50],[y+1,x-50]]
-            break
+            
          elif c==2:
             if all(img[y,x-50]==[255,255,255]):
                goal=[[y,x-50],[y+1,x-50]]
