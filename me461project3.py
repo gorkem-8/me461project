@@ -1103,6 +1103,7 @@ class backspacex:
                   goal=[[y,x-rang-50],[y-1,x-rang-50]]
          if a==0 and i==12:
             i=0
+            a=0
             rang=rang+100           
       
          #elif game_point-a<0:
