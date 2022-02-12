@@ -1112,7 +1112,7 @@ class backspacex:
             
       X=x
       Y=y
-      x_sign=(goal[1][1]-x)/abs(goal[1][1]-x)
+      x_sign=int((goal[1][1]-x)/abs(goal[1][1]-x))
       y_sign=(goal[1][0]-y)/abs(goal[1][0]-y)
       while int(abs(X-goal[1][1]))>0:
          X+=x_sign
