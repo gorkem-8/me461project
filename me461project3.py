@@ -1107,7 +1107,7 @@ class backspacex:
             rang=rang+50           
       
          if game_point-a<0:
-            c=np.random.randint(2)
+            c=np.random.randint(4)
             if c==0:
                if all(img[y+50,x]==[255,255,255]):
                   goal=[[y,x+1],[y+50,x+1]]
@@ -1118,7 +1118,7 @@ class backspacex:
                else:
                   goal=[[y,x+50],[y+1,x+50]]
                break
-            else:
+            elif c==1:
                if all(img[y-50,x]==[255,255,255]):
                   goal=[[y,x+1],[y-50,x+1]]
                elif all(img[y-50,x]==[1,1,1]):
@@ -1128,4 +1128,24 @@ class backspacex:
                else:
                   goal=[[y,x-50],[y+1,x-50]]
                break
+            elif c==2:
+               if all(img[y,x-50]==[255,255,255]):
+                  goal=[[y,x-50],[y+1,x-50]]
+               elif all(img[y,x-50]==[1,1,1]):
+                  goal=[[y,x-50],[y+1,x-50]]
+               elif all(img[y,x-50]==[0,0,0]):
+                  goal=[[y,x-50],[y+1,x-50]]
+               else:
+                  goal=[[y,x+1],[y+50,x+1]]
+               
+            elif c==3:
+               if all(img[y,x+50]==[255,255,255]):
+                  goal=[[y,x+50],[y+1,x+50]]
+               elif all(img[y,x+50]==[1,1,1]):
+                  goal=[[y,x+50],[y+1,x+50]]
+               elif all(img[y,x+50]==[0,0,0]):
+                  goal=[[y,x+50],[y+1,x+50]]
+               else:
+                  goal=[[y,x+1],[y-50,x+1]]
+               
       return goal
