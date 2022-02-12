@@ -1101,16 +1101,28 @@ class backspacex:
                if colorpoint>a:
                   a=colorpoint
                   goal=[[y,x-rang-50],[y-1,x-rang-50]]
+           
          if a==0 and i==12:
             i=0
-            
             rang=rang+50           
       
-         #elif game_point-a<0:
-            #i=0
-            #rang=rang+100
-         #else:
-            
+         elif game_point-a<0:
+            i=0
+            rang=rang+50
+      X=x
+      Y=y
+      x_sign=(goal[1][1]-x)/abs(goal[1][1]-x)
+      y_sign=(goal[1][0]-y)/abs(goal[1][0]-y)
+      while(abs(X-goal[1][1])>0):
+         X+=x_sign
+         for i in colorz:
+            if game_point-colorz[i][1]<0:
+               goal[1][0]=goal[1][0]-50
+      while(abs(Y-goal[1][0])>0):
+         Y+=y_sign
+         for i in colorz:
+            if game_point-colorz[i][0]<0:
+               goal[1][1]=goal[1][1]-50
          
       
       return goal
